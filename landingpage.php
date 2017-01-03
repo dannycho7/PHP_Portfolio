@@ -15,7 +15,7 @@ echo '<div id="navigation" class="gradient">
       <ul class="menu-content">
         <li class="linknav"><a href="projects.php" class="navselect" target="_blank"'.$projectscolor.'>Projects</a></li><!--
         --><li class="linknav"><a href="photo.php" class="navselect" target="_blank"'.$photocolor.'>Photography</a></li><!--
-        --><li class="linknav"><a href="pics/Resume_DannyCho.pdf" class="navselect" target="_blank">Resume</a></li>
+        <li class="linknav"><a href="pics/Resume_DannyCho.pdf" class="navselect" target="_blank">Resume</a></li>-->
       </ul>
       </div><!--menubar-->
       </div><!--container-->

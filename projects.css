@@ -19,7 +19,7 @@ a:hover,.arrow:hover{
 	margin-bottom: 40px;
 }
 #initialpageimg{ 
-	background-image:url('pics/project/bg-1080.JPG');
+	background-image:url('pics/project/bg.JPG');
 	height: 100%;
 }
 .content-container{
@@ -56,7 +56,7 @@ a:hover,.arrow:hover{
 #webpage{
 	min-height: 100%;
 }
-@media only screen and(min-width:1920px){
+/*@media only screen and(min-width:1920px){
 	#initialpageimg{
 		background-image: url('pics/photography/bg-1920.JPG');
 	}
@@ -75,4 +75,4 @@ a:hover,.arrow:hover{
 	#initialpageimg{
 		background-image: url('pics/photography/bg-6000.JPG');
 	}
-}
+}*/
