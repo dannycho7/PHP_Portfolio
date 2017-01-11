@@ -11,6 +11,7 @@
 <?php 
 $projectscolor='';
 $photocolor='';
+$homecolor='style="color:#838b91;"';
 $messagefront = 'Software Developer';
 $messagebehind = 'Who I am. . .';
 require 'landingpage.php';

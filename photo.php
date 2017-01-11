@@ -10,6 +10,7 @@
 <body onresize='menuswitch()'>
 <?php 
 $projectscolor='';
+$homecolor='';
 $photocolor='style="color:#838b91;"';
 $messagefront = 'Photos &amp; Moments';
 $messagebehind = 'I see through. . .';

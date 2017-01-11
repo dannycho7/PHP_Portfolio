@@ -10,6 +10,7 @@
 <?php 
 $projectscolor='style="color:#838b91;"';
 $photocolor='';
+$homecolor='';
 $messagefront = 'Project Involvement';
 $messagebehind = 'What I do. . .';
 require 'landingpage.php';

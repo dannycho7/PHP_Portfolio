@@ -2,7 +2,7 @@
 echo '<div id="navigation" class="gradient">
       <div id="nav-cover">
     <div id = "logo">
-        <a href="index.php">
+        <a href="index">
           <img src="pics/social/logo1.png" href="#" style="width: 97px;height:48px;"></img>
         </a>
         </div>
@@ -13,7 +13,8 @@ echo '<div id="navigation" class="gradient">
       <div id="container">
         <div id="menubar">
       <ul class="menu-content">
-        <li class="linknav"><a href="projects" class="navselect" '.$projectscolor.'>Projects</a></li><!--
+        <li class="linknav"><a href="index" class="navselect" '.$homecolor.'>Home</a></li><!--
+        --><li class="linknav"><a href="projects" class="navselect" '.$projectscolor.'>Projects</a></li><!--
         --><li class="linknav"><a href="photo" class="navselect" '.$photocolor.'>Photography</a></li><!--
         <li class="linknav"><a href="pics/Resume_DannyCho.pdf" class="navselect" target="_blank">Resume</a></li>-->
       </ul>
