@@ -1,3 +1,0 @@
-[19-Aug-2016 17:49:41 America/Chicago] PHP Warning:  require(landingpage.php): failed to open stream: No such file or directory in /home2/dannycho7/public_html/index.php on line 15
-[19-Aug-2016 17:49:41 America/Chicago] PHP Warning:  require(landingpage.php): failed to open stream: No such file or directory in /home2/dannycho7/public_html/index.php on line 15
-[19-Aug-2016 17:49:41 America/Chicago] PHP Fatal error:  require(): Failed opening required 'landingpage.php' (include_path='.:/opt/php56/lib/php') in /home2/dannycho7/public_html/index.php on line 15

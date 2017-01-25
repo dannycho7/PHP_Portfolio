@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Photography | Danny Cho</title>
-  <link rel="stylesheet" type="text/css" href="dannyglobal.css">
-  <link rel="stylesheet" type="text/css" href="photo.css">
-  <link rel="stylesheet" type="text/css" href="photopolaroid.css">
+  <link rel="stylesheet" type="text/css" href="css/dannyglobal.css">
+  <link rel="stylesheet" type="text/css" href="css/photo.css">
+  <link rel="stylesheet" type="text/css" href="css/photopolaroid.css">
 </head>
 <body onresize='menuswitch()'>
 <?php 
@@ -14,7 +14,7 @@ $homecolor='';
 $photocolor='style="color:#838b91;"';
 $messagefront = 'Photos &amp; Moments';
 $messagebehind = 'I see through. . .';
-require 'landingpage.php';
+require 'modules/landingpage.php';
 ?>
 <div id='webpage'>
 <div id='content'>
@@ -56,7 +56,7 @@ echo '</form></div>';
 </div>
 </div><!--webpage-->
 </body>
-<script src='web.js'></script>
-<script src = 'jquery-3.1.0.min.js'></script>
-<script src='photo.js'></script>
+<script src= 'js/web.js'></script>
+<script src = 'js/jquery-3.1.0.min.js'></script>
+<script src= 'js/photo.js'></script>
 </html>

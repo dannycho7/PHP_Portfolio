@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Projects | Danny Cho</title>
-  <link rel="stylesheet" type="text/css" href="dannyglobal.css">
-  <link rel="stylesheet" type="text/css" href="projects.css">
+  <link rel="stylesheet" type="text/css" href="css/dannyglobal.css">
+  <link rel="stylesheet" type="text/css" href="css/projects.css">
   </head>
 <body onresize='menuswitch()'>
 <?php 
@@ -13,7 +13,7 @@ $photocolor='';
 $homecolor='';
 $messagefront = 'Project Involvement';
 $messagebehind = 'What I do. . .';
-require 'landingpage.php';
+require 'modules/landingpage.php';
 ?>
 <div id='webpage'>
 <div class='content-container' style="padding:10% 25%; width:50%;">
@@ -69,6 +69,6 @@ require 'landingpage.php';
 </div>
 </div><!--loaded-->
 </body>
-<script src='webapp.js'></script>
-<script src='web.js'></script>
+<script src='js/webapp.js'></script>
+<script src='js/web.js'></script>
 </html>

@@ -1,0 +1,78 @@
+h1{
+	 margin-bottom: 0; 
+}
+h2{
+	font-family: 'Indie Flower';  font-size: 6vw; letter-spacing: 0.4vw; text-transform: capitalize; color: #E8C587;
+	font-weight: normal; margin:0;
+}
+h6{
+	font-family: 'Lato', sans-serif; font-size: 1.4vw; text-transform: capitalize; letter-spacing: 0.1vw;
+	font-weight: bold;  margin-right: 1.5vw; color: #ECECEA; display: inline;
+}
+p{
+	font-size: 1.5vw; display: inline-block; width: 100%; color: white;
+}
+a:hover,.arrow:hover{
+	cursor: pointer;
+}
+.description{
+	margin-bottom: 40px;
+}
+#initialpageimg{ 
+	background-image:url('../pics/project/bg.JPG');
+	height: 100%;
+}
+.content-container{
+	width: 70%;
+	padding: 5% 15%;
+	margin:0;
+	overflow: auto;
+	display: table;
+}
+.content{
+	vertical-align: middle;
+	display: table-cell;
+	height: 100%;
+	margin:0 auto;
+	text-align: center;
+}
+.content img{
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	box-shadow: 5px 5px 5px #888888;
+}
+.slide-a{
+	height: 100%;
+	width:auto;
+	display: none;
+}
+.content .arrow{
+	position:absolute;top:45%; height:25px;width:25px; box-shadow:none;
+}
+.slide-container{
+	position:relative;width:100%;
+}
+#webpage{
+	min-height: 100%;
+}
+/*@media only screen and(min-width:1920px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-1920.JPG');
+	}
+}
+@media only screen and(min-width: 2580px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-2580.JPG');
+	}
+}
+@media only screen and(min-width: 4000px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-4000.JPG');
+	}
+}
+@media only screen and(min-width: 6000px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-6000.JPG');
+	}
+}*/

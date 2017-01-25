@@ -1,0 +1,71 @@
+body{background-color:#f5f5dc;}
+.photonav{
+	margin: 3% 0% 4% 0%;	
+}
+.photonav p,span{
+	font-family: 'Poiret One';
+	font-size: 1.5vw;
+	margin-left: 2%; 
+}
+.photonav span{
+	font-weight: 700;
+}
+p,.info{
+	font-family: 'Poiret One'; font-size:3vw;
+}
+.photonav img{
+	vertical-align: text-bottom;
+	margin-right: 0.2%;
+}
+.info{
+	text-decoration: none;
+	padding: 2px 5px;
+	color: black;
+	display :block;
+}
+.info img{
+	max-height: 64px;
+}
+.back-btn:visited,.back-btn:hover{
+	text-decoration: none;
+}
+#navigation{
+	position: absolute;
+}
+#initialpageimg{
+	background-image: url('../pics/photography/bg-1080.JPG');
+}
+#initialpage{
+	background-color: transparent;
+}
+#photo-container>img{
+	width: 24.5%;
+	margin: 0% 0.25%;
+}
+#content{
+	padding: 0% 3% 5% 3%;
+	position: relative;
+}
+form{
+	text-align: center;
+}
+@media only screen and(min-width:1920px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-1920.JPG');
+	}
+}
+@media only screen and(min-width: 2580px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-2580.JPG');
+	}
+}
+@media only screen and(min-width: 4000px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-4000.JPG');
+	}
+}
+@media only screen and(min-width: 6000px){
+	#initialpageimg{
+		background-image: url('pics/photography/bg-6000.jpg');
+	}
+}

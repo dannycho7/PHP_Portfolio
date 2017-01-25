@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title> Danny's Personal Website</title>
-	<link rel="stylesheet" type="text/css" href="dannyglobal.css">
-	<link rel="stylesheet" href="danny.css">
+	<link rel="stylesheet" type="text/css" href="css/dannyglobal.css">
+	<link rel="stylesheet" href="css/danny.css">
 </head>
 <body onresize='menuswitch()'>
 <div id="bg-fixed-layered"></div>
@@ -14,7 +14,7 @@ $photocolor='';
 $homecolor='style="color:#838b91;"';
 $messagefront = 'Software Developer';
 $messagebehind = 'Who I am. . .';
-require 'landingpage.php';
+require 'modules/landingpage.php';
 ?>
 <div id='webpage'>
 <div id='content-container'>
@@ -39,8 +39,8 @@ require 'landingpage.php';
 	<hr/>
 	<div id="internships">
 		<h1>Experience</h1>
-		<p><a href="http://www.smartRG.com" target="_blank">SmartRG Inc.</a> - Software Engineering Intern, Winter 2017</p>
-		<p><a href="http://www.sbhacks.com" target="_blank">SB Hacks III</a> - Developer Team Member, Oct 2016 - Present</p>
+		<p><a href="http://www.smartRG.com" target="_blank">SmartRG Inc.</a> - Software Engineering Intern, Fall 2016 &amp; Winter 2017</p>
+		<p><a href="http://www.sbhacks.com" target="_blank">SB Hacks III</a> - Developer &amp; Organizer, Fall 2016 - Present</p>
 	</div>
 	<hr/>
 	<div id='projects'>
@@ -68,7 +68,7 @@ require 'landingpage.php';
 </div>
 </div><!--loaded-->
 </body>
-<script src = 'web.js'></script>
-<script src = 'jquery-3.1.0.min.js'></script>
-<script src = 'actions.js'></script>
+<script src = 'js/web.js'></script>
+<script src = 'js/jquery-3.1.0.min.js'></script>
+<script src = 'js/actions.js'></script>
 </html>
