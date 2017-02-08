@@ -118,7 +118,7 @@
     width: 100%;
     font-size: 9vw; }
 
-#content #photo-container {
+#content-container #photo-container {
   padding: 5% 0; }
 
 .photonav p {
@@ -158,7 +158,7 @@ form {
   .proj-content .proj-preview img {
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     border: 1px solid #c5c5c5;
     -webkit-box-shadow: 18px 12px 45px -14px black;
     -moz-box-shadow: 18px 12px 45px -14px black;
@@ -252,69 +252,6 @@ form {
     right: 2%;
     font-size: 1vw; }
 
-@media only screen and (max-device-width: 667px) and (orientation: portrait) {
-  #container-before {
-    display: none; }
-
-  #container {
-    left: 0;
-    top: 0;
-    position: fixed;
-    float: none;
-    display: table;
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(21, 24, 28, 0.95);
-    width: 100%;
-    height: 100%;
-    z-index: 4; }
-
-  #menubar {
-    float: none;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    z-index: 3; }
-
-  #menubar ul li {
-    text-align: center;
-    border: none;
-    float: none;
-    margin: 0;
-    padding: 10%;
-    display: block;
-    transition: all 0.5s ease; }
-
-  #menubar ul li a {
-    font-size: 40px;
-    display: inline; }
-
-  #menubar ul {
-    display: block;
-    float: none;
-    padding: 0; }
-
-  #menubar li a:hover {
-    cursor: pointer; }
-
-  #menu-icon {
-    display: inline-block;
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    padding: 20px; }
-
-  #menu-icon img {
-    height: 35px;
-    width: 35px; }
-
-  #menu-icon #exit {
-    display: none; }
-
-  #initialpageimg, #initialpage-cover {
-    height: 33%; } }
 html, body {
   height: 100%;
   width: 100%;
@@ -383,7 +320,7 @@ strong {
 p {
   color: #A4B5B8;
   text-align: left;
-  font-size: 2vw;
+  font-size: 26px;
   line-height: 170%;
   margin: 0 auto;
   display: block; }
@@ -391,7 +328,7 @@ p {
 article {
   display: block;
   text-align: left;
-  font-size: 1.4vw;
+  font-size: 20px;
   line-height: 160%;
   font-weight: bold; }
 
@@ -427,13 +364,9 @@ article {
   color: white;
   border: none;
   padding: 5%; }
-  #content-container #content {
-    position: relative;
-    height: 100%;
-    z-index: 1; }
-    #content-container #content > div {
-      margin: 0;
-      padding: 10% 0; }
+  #content-container .content {
+    margin: 0;
+    padding: 10% 0; }
 
 .proj-container-container {
   vertical-align: text-top;
@@ -468,15 +401,15 @@ article {
     .proj-container-container .content-proj-container ul {
       width: 100%; }
     .proj-container-container .content-proj-container li {
-      font-size: 1.3vw;
+      font-size: 1.5vw;
       line-height: 130%;
       margin: 0; }
     .proj-container-container .content-proj-container span {
-      width: 1.8vw;
+      width: 20px;
       display: inline-block; }
     .proj-container-container .content-proj-container p {
-      font-size: 2vw;
       margin-bottom: 30px;
+      font-size: 2vw;
       text-align: left;
       text-transform: capitalize;
       border-bottom: 1px solid transparent;
@@ -494,5 +427,118 @@ article {
       cursor: pointer;
       width: 100%;
       background: white; }
+
+@media only screen and (max-width: 767px) {
+  .photonav p {
+    font-size: 18px; }
+
+  #photo-container img {
+    margin: 0% 0.5%;
+    width: 99%; }
+  #photo-container .album {
+    width: 40%;
+    margin: 4.25%; }
+    #photo-container .album p {
+      font-size: 18px;
+      font-weight: bold; }
+
+  h1 {
+    font-size: 40px; }
+
+  #content-container {
+    padding: 0; }
+
+  #webpage {
+    padding: 0 5%; }
+
+  .proj-content {
+    width: 96%;
+    padding: 100px 2%; }
+    .proj-content .description span {
+      font-size: 22px; }
+
+  .proj-container-container {
+    width: 47%; }
+    .proj-container-container .content-proj-container p {
+      font-size: 26px; }
+    .proj-container-container .content-proj-container li {
+      font-size: 20px; }
+
+  #initialpage-container {
+    height: 45%; }
+
+  p {
+    font-size: 20px; }
+
+  #social a {
+    margin-right: 3px; }
+    #social a img {
+      width: 20px;
+      height: 20px; }
+  #social hr {
+    width: 50px; } }
+@media only screen and (max-width: 667px) {
+  /* portrait phones */
+  #container-before {
+    display: none; }
+
+  #container {
+    left: 0;
+    top: 0;
+    position: fixed;
+    float: none;
+    display: table;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(21, 24, 28, 0.95);
+    width: 100%;
+    height: 100%;
+    z-index: 4; }
+
+  #menubar {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 3; }
+    #menubar ul {
+      display: block;
+      float: none;
+      padding: 0; }
+      #menubar ul li {
+        text-align: center;
+        border: none;
+        float: none;
+        margin: 0;
+        padding: 10%;
+        display: block;
+        transition: all 0.5s ease; }
+        #menubar ul li a {
+          font-size: 40px;
+          display: inline; }
+          #menubar ul li a:hover {
+            cursor: pointer; }
+
+  #menu-icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    padding: 20px; }
+    #menu-icon img {
+      height: 35px;
+      width: 35px; }
+    #menu-icon #exit {
+      display: none; }
+
+  .proj-container-container .content-proj-container p {
+    font-size: 18px; }
+  .proj-container-container .content-proj-container li {
+    font-size: 16px; }
+
+  .proj-content .description span {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=theme.css.map */

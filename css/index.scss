@@ -5,12 +5,17 @@ strong{
 	color: white;
 }
 p{
-	color: #A4B5B8; text-align:left; font-size: 2vw; line-height: 170%; margin: 0 auto; display: block;
+	color: #A4B5B8; 
+	text-align:left; 
+	font-size: 26px; 
+	line-height: 170%; 
+	margin: 0 auto; 
+	display: block;
 }
 article{
 	display: block;
 	text-align: left;
-	font-size: 1.4vw;
+	font-size: 20px;
 	line-height: 160%;
 	font-weight: bold;
 }
@@ -51,13 +56,10 @@ article{
 #content-container{
 	color: white; 
 	border:none; 
-	padding: 5%; 
-	#content{
-		position: relative; height: 100%; z-index: 1;
-		&>div{
-			margin: 0;
-			padding: 10% 0;
-		}
+	padding: 5%;
+	.content{
+		margin: 0;
+		padding: 10% 0;
 	}
 }
 
@@ -99,17 +101,17 @@ article{
 		 	width: 100%;
 		 }
 		 li{
-		 	font-size: 1.3vw; 
+		 	font-size: 1.5vw; 
 		 	line-height: 130%; 
 		 	margin: 0;	
 		 }
 		 span{
-		 	width: 1.8vw; 
+		 	width: 20px; 
 		 	display: inline-block;
 		 }
 		 p{
-		 	font-size:2vw;
 		 	margin-bottom: 30px; 
+		 	font-size: 2vw;
 		 	text-align: left; 
 		 	text-transform: capitalize;
 			border-bottom: 1px solid transparent; 
