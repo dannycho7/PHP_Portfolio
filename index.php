@@ -2,24 +2,27 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title> Danny's Personal Website</title>
-	<link rel="stylesheet" type="text/css" href="css/dannyglobal.css">
-	<link rel="stylesheet" href="css/danny.css">
+	<title>Danny's Personal Website</title>
+	<link rel="stylesheet" href="css/theme.css">
 </head>
 <body onresize='menuswitch()'>
-<div id="bg-fixed-layered"></div>
-<?php 
+<?php
 $projectscolor='';
 $photocolor='';
 $homecolor='style="color:#838b91;"';
+require_once 'modules/header.php'
+?>
+
+
+<div id='webpage'>
+<?php 
 $messagefront = 'Software Developer';
 $messagebehind = 'Who I am. . .';
-require 'modules/landingpage.php';
+require_once 'modules/landingpage.php';
 ?>
-<div id='webpage'>
 <div id='content-container'>
 	<div id='content'>
-	<div style="padding-top:0;">
+	<div>
 	<article><div id="social">
 	  <div><hr/></div>
 	  <a href="https://www.facebook.com/dannychooo" target="_blank">
@@ -44,31 +47,27 @@ require 'modules/landingpage.php';
 	</div>
 	<hr/>
 	<div id='projects'>
-		<h1 id = 'projh1' style='padding-bottom: 5%;'>Project Overview</h1>
+		<h1 id = 'projh1'>Project Overview</h1>
 		<div class='proj-container-container'>
-		<a href='projects.php#sitter' class='content-proj-container' target="_blank"><p>EasySitter</p>
+		<a href='projects.php#sitter' class='content-proj-container'><p>EasySitter</p>
 		<ul><li><span>Y.</span>2015</li><li><span>A.</span>WeHack</li><li><span>T.</span>Hackathon Project</li></ul>
 		</a></div><!--
-		--><div class='proj-container-container'><a href='projects.php#selfie' class='content-proj-container' target="_blank"><p>Hashtag Selfie</p>
+		--><div class='proj-container-container'><a href='projects.php#selfie' class='content-proj-container'><p>Hashtag Selfie</p>
 		<ul><li><span>Y.</span>2015</li><li><span>A.</span>OC Hacks i3</li><li><span>T.</span>Hackathon Project</li></ul>
 		</a></div><!--
-		--><div class='proj-container-container'><a href='projects.php#gomoku' class='content-proj-container' target="_blank"><p>Gomoku</p>
+		--><div class='proj-container-container'><a href='projects.php#gomoku' class='content-proj-container'><p>Gomoku</p>
 		<ul><li><span>Y.</span>2015</li><li><span>A.</span>AP CSA</li><li><span>T.</span>School Project</li></ul>
 		</a></div>
 	</div>
-	<hr/>
-	<div id='photos' style="padding-bottom: 5%;">
-		<h1>Photography</h1>
-		<div id='photos-img-wrapper' style=''><img id='gallery-img' style="width: 100%;" src="pics/index/d3300.jpg"></img>
-		<div id='gallery-wrapper' style=""><a id='gallery-button' href="photo.php" target="_blank">Gallery</a></div>
-		</div>
-		
 	</div>
 </div>
 </div>
 </div><!--loaded-->
+
 </body>
 <script src = 'js/web.js'></script>
 <script src = 'js/jquery-3.1.0.min.js'></script>
-<script src = 'js/actions.js'></script>
+<script src = 'js/index.js'></script>
+<script src = 'js/photo.js'></script>
+<script type="text/javascript" src="js/projects.js"></script>
 </html>

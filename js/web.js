@@ -32,3 +32,14 @@ var height = getComputedStyle(slidecontainer.getElementsByClassName('initial-sli
 slidecontainer.style.height=height;
 }
 }
+function navigate(str){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(xhttp.readyState == 4 && xhttp.status == 200){
+			document.body.innerHTML = xhttp.responseText;
+			window.history.pushState({}, 'Danny\'s Personal Site', str);
+		}
+	};
+	xhttp.open("GET",str,true);
+	xhttp.send();
+}

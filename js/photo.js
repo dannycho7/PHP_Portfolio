@@ -8,16 +8,21 @@ function iconresize(){
 }
 }
 window.addEventListener("resize",function(){iconresize();},false);
-function show(str){
-var	xhttp;
-if(window.newXMLHttpRequest){
-	xhttp= new XMLHttpRequest();
-}
-else{//for IE5 and IE6
-	xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-}
-xhttp.onreadystatechange = function(){	if(this.readystate == 4 && this.status == 200){
-		document.getElementById("content").innerHTML = this.responseText;}};
-	xhttp.open("GET","photopolaroid.php?folder=" + str,true);
+
+
+function showPhoto(str){
+	var	xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			document.body.innerHTML = this.responseText;
+			if(str != ""){
+				window.history.pushState({}, 'Danny\'s Personal Site', 'photo?folder='+str);
+			}
+			else{
+				window.history.pushState({}, 'Danny\'s Personal Site', 'photo');
+			}
+		}
+	};
+	xhttp.open("GET","photo?folder=" + str,true);
 	xhttp.send();	
 }
