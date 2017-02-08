@@ -21,8 +21,7 @@ $messagebehind = 'Who I am. . .';
 require_once 'modules/landingpage.php';
 ?>
 <div id='content-container'>
-	<div id='content'>
-	<div>
+	<div class="content">
 	<article><div id="social">
 	  <div><hr/></div>
 	  <a href="https://www.facebook.com/dannychooo" target="_blank">
@@ -40,13 +39,13 @@ require_once 'modules/landingpage.php';
 	</article>
 	</div>
 	<hr/>
-	<div id="internships">
+	<div class="content">
 		<h1>Experience</h1>
 		<p><a href="http://www.smartRG.com" target="_blank">SmartRG Inc.</a> - Software Engineering Intern, Fall 2016 &amp; Winter 2017</p>
 		<p><a href="http://www.sbhacks.com" target="_blank">SB Hacks III</a> - Developer &amp; Organizer, Fall 2016 - Present</p>
 	</div>
 	<hr/>
-	<div id='projects'>
+	<div class="content" id='projects'>
 		<h1 id = 'projh1'>Project Overview</h1>
 		<div class='proj-container-container'>
 		<a href='projects.php#sitter' class='content-proj-container'><p>EasySitter</p>
@@ -60,7 +59,6 @@ require_once 'modules/landingpage.php';
 		</a></div>
 	</div>
 	</div>
-</div>
 </div>
 </div><!--loaded-->
 
