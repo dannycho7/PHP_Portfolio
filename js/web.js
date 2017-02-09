@@ -2,12 +2,13 @@ var revealed = false;
 function reveal(){ //this method will change the class 
 	var menu = document.getElementById('container');
 	revealed=true;
+	console.log("reveal");
 	if(getComputedStyle(menu).visibility=='hidden'){
-	menu.style.visibility='visible';
-	menu.style.opacity=1;
-	document.getElementById('navigation').classList.toggle('gradientCntrl');
-	document.getElementById('menuimg').style.display='none';
-	document.getElementById('exit').style.display='inline-block';
+		menu.style.visibility='visible';
+		menu.style.opacity=1;
+		document.getElementById('navigation').classList.toggle('gradientCntrl');
+		document.getElementById('menuimg').style.display='none';
+		document.getElementById('exit').style.display='inline-block';
 	}
 	else{
 		document.getElementById('navigation').classList.toggle('gradientCntrl');
@@ -19,15 +20,24 @@ function reveal(){ //this method will change the class
 }
 function menuswitch(){//runs when window gets resized
 	if(getComputedStyle(document.getElementById('menu-icon')).display=='none' && revealed){
+		console.log("yes");
 		var menu = document.getElementById('container');
 		menu.style.visibility='visible';
 		menu.style.opacity=1;
 		revealed=false;
 	}
+	if(getComputedStyle(document.getElementById('menuimg')).display=='inline-block' && getComputedStyle(document.getElementById('menu-icon')).display !='none'){
+		var menu = document.getElementById('container');
+		menu.style.visibility='hidden';
+		menu.style.opacity=0;
+		revealed = false;
+		console.log("lol");
+	}
 }
 function navigate(str){
 	var xhttp = new XMLHttpRequest();
 	document.body.innerHTML = "";
+
 	xhttp.onreadystatechange = function(){
 		if(xhttp.readyState == 4 && xhttp.status == 200){
 			document.body.innerHTML = xhttp.responseText;

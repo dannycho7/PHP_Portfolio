@@ -48,7 +48,13 @@
 		}
 	}
 	#initialpage-container{
-		height: 45%;
+		height: 75%;
+		#fulltextcontainer-top{
+			height: 85%;
+		}
+		#fulltext,#fulltext-top{
+			vertical-align: bottom;
+		}
 	}
 	p{
 		font-size: 20px;
@@ -79,6 +85,15 @@
 	.proj-overview{
 		p{
 			font-size: 24px;
+		}
+	}
+	#initialpage-container{
+		height: 45%;
+		#fulltextcontainer-top{
+			height: 85%;
+		}
+		#fulltext,#fulltext-top{
+			vertical-align: middle;
 		}
 	}
 	#menubar{
