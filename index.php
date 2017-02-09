@@ -47,16 +47,11 @@ require_once 'modules/landingpage.php';
 	<hr/>
 	<div class="content" id='projects'>
 		<h1 id = 'projh1'>Project Overview</h1>
-		<div class='proj-container-container'>
-		<a href='projects.php#sitter' class='content-proj-container'><p>EasySitter</p>
-		<ul><li><span>Y.</span>2015</li><li><span>A.</span>WeHack</li><li><span>T.</span>Hackathon Project</li></ul>
-		</a></div><!--
-		--><div class='proj-container-container'><a href='projects.php#selfie' class='content-proj-container'><p>Hashtag Selfie</p>
-		<ul><li><span>Y.</span>2015</li><li><span>A.</span>OC Hacks i3</li><li><span>T.</span>Hackathon Project</li></ul>
-		</a></div><!--
-		--><div class='proj-container-container'><a href='projects.php#gomoku' class='content-proj-container'><p>Gomoku</p>
-		<ul><li><span>Y.</span>2015</li><li><span>A.</span>AP CSA</li><li><span>T.</span>School Project</li></ul>
-		</a></div>
+		<?php include 'projinfo.php';
+			foreach($projInfo->project as $proj){
+				echo "<div class='proj-container-container'><a href='projects#".$proj['name']."' class='content-proj-container'><p>".$proj['name']."</p><ul><li>".$proj['year']."</li><li>".$proj['accomplishment']."</li><li>".$proj['purpose']."</li></ul></a></div>";
+			}
+		?>
 	</div>
 	</div>
 </div>

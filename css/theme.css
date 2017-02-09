@@ -390,8 +390,8 @@ article {
     background: white; }
   .proj-container-container .content-proj-container {
     display: inline-block;
-    padding: 22% 17%;
-    width: 66%;
+    padding: 22% 12%;
+    width: 76%;
     background-color: rgba(15, 15, 15, 0.7);
     text-decoration: none; }
     .proj-container-container .content-proj-container:hover p {
@@ -534,7 +534,7 @@ article {
       display: none; }
 
   .proj-container-container .content-proj-container p {
-    font-size: 18px; }
+    font-size: 20px; }
   .proj-container-container .content-proj-container li {
     font-size: 16px; }
 
