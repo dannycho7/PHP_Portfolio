@@ -29,7 +29,7 @@ require_once 'modules/landingpage.php';
       foreach($projInfo->project as $proj){
         echo "<div id = '".$proj['name']."' class='proj-content'>
                 <div class='proj-preview'>
-                  <img src='pics/project/".$proj['name'].".png' />
+                  <img src='pics/project/".$proj['name'].".png' alt='No picture available' />
                 </div>
                 <h1>".$proj['name']."</h1>
                 <div class='description'>
