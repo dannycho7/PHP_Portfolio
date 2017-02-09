@@ -12,6 +12,9 @@ window.addEventListener("resize",function(){iconresize();},false);
 
 function showPhoto(str){
 	var	xhttp = new XMLHttpRequest();
+	$('html, body').animate({
+        scrollTop: $("#content-container").offset().top - '80'
+    }, 400);
 	xhttp.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
 			document.body.innerHTML = this.responseText;

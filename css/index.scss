@@ -3,6 +3,7 @@ body{
 }
 strong{
 	color: white;
+	font-weight: normal;
 }
 p{
 	color: #A4B5B8; 
@@ -17,7 +18,7 @@ article{
 	text-align: left;
 	font-size: 20px;
 	line-height: 160%;
-	font-weight: bold;
+	font-weight: normal;
 }
 #initialpageimg{
 	height: 100%;
@@ -66,8 +67,8 @@ article{
 .proj-container-container{
 	vertical-align:text-top; 
 	display: inline-block; 
-	margin: 1.5%;
-	width: 30%; 
+	margin: 1% 2% 1% 0;
+	width: 31%; 
 	transition: all 0.5s ease; 
 	-webkit-transition: all 1s ease;
 	opacity: 0; 

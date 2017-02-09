@@ -27,6 +27,7 @@ function menuswitch(){//runs when window gets resized
 }
 function navigate(str){
 	var xhttp = new XMLHttpRequest();
+	document.body.innerHTML = "";
 	xhttp.onreadystatechange = function(){
 		if(xhttp.readyState == 4 && xhttp.status == 200){
 			document.body.innerHTML = xhttp.responseText;

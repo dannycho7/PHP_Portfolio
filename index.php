@@ -15,51 +15,42 @@ require_once 'modules/header.php'
 
 
 <div id='webpage'>
-<?php 
-$messagefront = 'Software Developer';
-$messagebehind = 'Who I am. . .';
-require_once 'modules/landingpage.php';
-?>
-<div id='content-container'>
-	<div class="content">
-	<article><div id="social">
-	  <div><hr/></div>
-	  <a href="https://www.facebook.com/dannychooo" target="_blank">
-	  <img src="pics/social/facebook.png"></img></a>  
-	  <a href="https://www.instagram.com/dannycho7/" target="_blank">
-	    <img src="pics/social/instagram.png"></img></a>
-	  <a href="https://www.linkedin.com/in/danny-cho-32a553ab?trk=nav_responsive_tab_profile_pic" target="_blank">
-	    <img src="pics/social/linkedin.png"></img></a>  
-	  <a href="https://www.youtube.com/channel/UCGvCCaII82m9qtqkKDYXI3g" target="_blank">
-	    <img src="pics/social/youtube.png"></img></a> 
-	  <a href="https://www.github.com/dannycho7" target="_blank">
-	  	<img src="pics/social/github.png"></a>  
-	  </div>
-		<p>I am <strong>Danny Cho</strong>, a self-taught aspiring <strong>web</strong> &amp; <strong>mobile app developer</strong> and <strong>entrepreneur</strong>. I have been <strong>coding</strong> &amp; attending <strong>hackathons</strong> for 2 years. I am a <strong>Computer Science</strong> major at <strong>UC Santa Barbara</strong>. I always look forward to meeting new people and collaborating on <strong>projects</strong>. Feel free to <a href='mailto:dannycho7@gmail.com' target="_blank">contact me</a> for anything! This site was made by Danny Cho with PHP / HTML / CSS / Javascript / Jquery.</p>
-	</article>
+	<?php 
+		$messagefront = 'Software Developer';
+		$messagebehind = 'Who I am. . .';
+		require_once 'modules/landingpage.php';
+	?>
+	<div id='content-container'>
+		<div class="content">
+		<article>
+			<?php require_once 'modules/social.php' ?>
+			<?php require_once 'modules/intro_descr.php' ?>
+		</article>
+		</div>
+
+		<div class="content" id='projects'>
+			<h1 id = 'projh1'>Project Overview</h1>
+			<?php include 'modules/projinfoXML.php';
+				foreach($projInfo->project as $proj){
+					echo "<div class='proj-container-container'><a href='projects#".$proj['name']."' class='content-proj-container'><p>".$proj['name']."</p><ul><li>".$proj['year']."</li><li>".$proj['accomplishment']."</li><li>".$proj['purpose']."</li></ul></a></div>";
+				}
+			?>
+		</div>
+
+		<div class="content">
+			<h1>Experience</h1>
+			<?php include 'modules/experienceXML.php';
+				foreach($experienceInfo->experience as $exp){
+					echo '<p><a href="'.$exp->url.'" target="_blank">'.$exp->name.'</a>&nbsp;-&nbsp;'.$exp->position.'&nbsp;'.$exp->time.'</p>';
+				}
+			?>
+		</div>
 	</div>
-	<hr/>
-	<div class="content">
-		<h1>Experience</h1>
-		<p><a href="http://www.smartRG.com" target="_blank">SmartRG Inc.</a> - Software Engineering Intern, Fall 2016 &amp; Winter 2017</p>
-		<p><a href="http://www.sbhacks.com" target="_blank">SB Hacks III</a> - Developer &amp; Organizer, Fall 2016 - Present</p>
-	</div>
-	<hr/>
-	<div class="content" id='projects'>
-		<h1 id = 'projh1'>Project Overview</h1>
-		<?php include 'projinfo.php';
-			foreach($projInfo->project as $proj){
-				echo "<div class='proj-container-container'><a href='projects#".$proj['name']."' class='content-proj-container'><p>".$proj['name']."</p><ul><li>".$proj['year']."</li><li>".$proj['accomplishment']."</li><li>".$proj['purpose']."</li></ul></a></div>";
-			}
-		?>
-	</div>
-	</div>
-</div>
 </div><!--loaded-->
 
 </body>
-<script src = 'js/web.js'></script>
 <script src = 'js/jquery-3.1.0.min.js'></script>
+<script src = 'js/web.js'></script>
 <script src = 'js/index.js'></script>
 <script src = 'js/photo.js'></script>
 <script type="text/javascript" src="js/projects.js"></script>

@@ -3,7 +3,7 @@
 		"<?xml version='1.0' encoding='UTF-8'?>
 		<projects>
 			<project name='EasySitter' accomplishment='Placed: 1st' purpose='WeHack Hackathon' year='2015'>
-				<technologies>HTML/CSS/Javascript/Blueberry/Google API</technologies>
+				<technologies>HTML/CSS/Javascript/Blueberry/Google Maps API</technologies>
 				<description>
 					EasySitter is a project and idea I worked on during the WeHack/Southeast Cities Hackathon with my teammate Esmeralda Nava. EasySitter connects local babysitters with parents at any time. Babysitters can simply check a box saying that they're ready to provide service (like uber). This site runs on a credit based system, so that parents don't have to immediately pay if they don't have the money at the moment or are willing to babysit themselves at another time to make up the credits.
 				</description>

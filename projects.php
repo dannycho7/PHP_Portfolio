@@ -25,7 +25,7 @@ require_once 'modules/landingpage.php';
       <p>Here are a few of the projects that I have worked on. If you would like to collaborate, don't hesitate to reach out!</p>
     </div>
     <?php
-      include 'projinfo.php';
+      include 'modules/projinfoXML.php';
       foreach($projInfo->project as $proj){
         echo "<div id = '".$proj['name']."' class='proj-content'>
                 <div class='proj-preview'>
@@ -45,15 +45,14 @@ require_once 'modules/landingpage.php';
                   </div>
                 </div>
                 <article>".$proj->description."</article>
-              </div>
-        ";
+              </div>";
       }
     ?>
   </div><!--loaded-->
 </div>
 </body>
-<script src = 'js/web.js'></script>
 <script src = 'js/jquery-3.1.0.min.js'></script>
+<script src = 'js/web.js'></script>
 <script src = 'js/index.js'></script>
 <script src = 'js/photo.js'></script>
 <script type="text/javascript" src="js/projects.js"></script>
