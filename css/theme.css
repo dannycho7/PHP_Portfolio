@@ -187,6 +187,7 @@ form {
       font-weight: bold; }
   .proj-content .readMore {
     border: none;
+    font-weight: normal;
     background-color: transparent;
     color: #14a6d7; }
     .proj-content .readMore:hover {
