@@ -27,6 +27,16 @@ require_once 'modules/landingpage.php';
     <?php
       include 'modules/projinfoXML.php';
       foreach($projInfo->project as $proj){
+        $description = $proj->description;
+        $str = $description;
+        $length = strlen($description);
+        if($length > 300){
+          $str = substr($description,0,300);
+          if($str[299] == " "){
+            $str = substr($str,0,299);
+          }
+          $str .= "..&nbsp;<b class='readMore' onclick=showInfo(this,'".$proj['name']."')>read more</b>";
+        }
         echo "<div id = '".$proj['name']."' class='proj-content'>
                 <div class='proj-preview'>
                   <img src='pics/project/".$proj['name'].".png' alt='No picture available' />
@@ -44,7 +54,7 @@ require_once 'modules/landingpage.php';
                     <span>".$proj['accomplishment']."</span>
                   </div>
                 </div>
-                <article>".$proj->description."</article>
+                <article>".$str."</article>
               </div>";
       }
     ?>

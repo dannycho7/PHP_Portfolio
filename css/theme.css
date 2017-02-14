@@ -185,6 +185,13 @@ form {
       text-transform: capitalize;
       letter-spacing: 0.1vw;
       font-weight: bold; }
+  .proj-content .readMore {
+    border: none;
+    background-color: transparent;
+    color: #14a6d7; }
+    .proj-content .readMore:hover {
+      color: #0b7da3;
+      cursor: pointer; }
 
 .album {
   background-color: white;

@@ -47,3 +47,15 @@ function navigate(str){
 	xhttp.open("GET",str,true);
 	xhttp.send();
 }
+
+function showInfo(element,projName){
+	var content = element.parentNode;
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(xhttp.readyState == 4 && xhttp.status == 200){
+			content.innerHTML = xhttp.responseText;
+		}
+	} 
+	xhttp.open("GET","modules/projDescr.php?name="+projName,true);
+	xhttp.send();
+}

@@ -54,4 +54,13 @@
 			font-weight: bold;  
 		}
 	}
+	.readMore{
+		border:none;
+		background-color:transparent;
+		color:#14a6d7;
+		&:hover{
+			color:#0b7da3;
+			cursor: pointer;
+		}
+	}
 }
