@@ -15,7 +15,7 @@ require_once 'modules/header.php'
 
 
 <div id='webpage'>
-	<?php 
+	<?php
 		$messagefront = 'Software Developer';
 		$messagebehind = 'Who I am. . .';
 		require_once 'modules/landingpage.php';
@@ -37,14 +37,14 @@ require_once 'modules/header.php'
 			?>
 		</div>
 
-		<div class="content">
+		<!--<div class="content">
 			<h1>Experience</h1>
 			<?php include 'modules/experienceXML.php';
 				foreach($experienceInfo->experience as $exp){
 					echo '<p><a href="'.$exp->url.'" target="_blank">'.$exp->name.'</a>&nbsp;-&nbsp;'.$exp->position.'&nbsp;'.$exp->time.'</p>';
 				}
 			?>
-		</div>
+		</div>-->
 	</div>
 </div><!--loaded-->
 

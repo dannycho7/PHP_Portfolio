@@ -58,6 +58,11 @@ require_once 'modules/landingpage.php';
                 <a target='_blank' href=".$proj['link']." class='readMore'><span>Download Link</span></a>
               </div>";
         }
+        if(isset($proj['github_link'])){
+        echo "<div>
+                <a target='_blank' href=".$proj['github_link']." class='readMore'><span>Github Link</span></a>
+              </div>";
+        }
         echo  "</div>
             <article>".$str."</article>
           </div>";
