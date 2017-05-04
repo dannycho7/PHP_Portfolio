@@ -2,7 +2,7 @@
 	$projXML =
 		"<?xml version='1.0' encoding='UTF-8'?>
 		<projects>
-			<project displayname='Percept' name='Percept' accomplishment='Won Best UX Hack' purpose='LA Hacks' year='2017'>
+			<project displayname='Percept' name='Percept' github_link='https://github.com/dannycho7/Percept' accomplishment='Won Best UX Hack' purpose='LA Hacks' year='2017'>
 				<technologies>Node.js, Express, JavaScript, HTML/CSS</technologies>
 				<description><![CDATA[
 					APIs Used: Flickr API, Microsoft Computer Vision, Datamuse API, Google Maps API <br/>
