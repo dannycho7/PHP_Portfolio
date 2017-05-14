@@ -6,7 +6,7 @@
 	<a href="https://www.instagram.com/dannycho7/" target="_blank">
 		<img src="pics/social/instagram.png" />
 	</a>
-	<a href="https://www.linkedin.com/in/danny-cho-32a553ab?trk=nav_responsive_tab_profile_pic" target="_blank">
+	<a href="https://www.linkedin.com/in/dannycho7" target="_blank">
 		<img src="pics/social/linkedin.png" />
 	</a>  
 	<a href="https://www.youtube.com/channel/UCGvCCaII82m9qtqkKDYXI3g" target="_blank">
