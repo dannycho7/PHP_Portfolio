@@ -3,8 +3,9 @@ var scrolledOnGallery = false;
 $(document).ready(function(){
 	appear();
 	$(window).on('scroll',function(){
-	appear();
-});});
+		appear();
+	})
+;});
 
 function appear(){
 	if($("#projects").length){

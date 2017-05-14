@@ -1,5 +1,5 @@
 var revealed = false;
-function reveal(){ //this method will change the class 
+function reveal(){ //this method will change the class
 	var menu = document.getElementById('container');
 	revealed=true;
 	console.log("reveal");
@@ -44,7 +44,8 @@ function navigate(str){
 			window.history.pushState({}, 'Danny\'s Personal Site', str);
 		}
 	};
-	xhttp.open("GET",str,true);
+	console.log(str);
+	xhttp.open("GET", str, true);
 	xhttp.send();
 }
 
@@ -55,7 +56,7 @@ function showInfo(element,projName){
 		if(xhttp.readyState == 4 && xhttp.status == 200){
 			content.innerHTML = xhttp.responseText;
 		}
-	} 
+	}
 	xhttp.open("GET","modules/projDescr.php?name="+projName,true);
 	xhttp.send();
 }
