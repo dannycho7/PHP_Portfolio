@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>Danny's Personal Website</title>
-	<link rel="stylesheet" href="css/theme.css">
-</head>
-<body onresize='menuswitch()'>
 <?php
-$projectscolor='';
-$photocolor='';
-$homecolor='style="color:#838b91;"';
-require_once 'modules/header.php'
+	$projectscolor='';
+	$photocolor='';
+	$homecolor='style="color:#838b91;"';
+	require_once 'modules/header.php';
 ?>
 
 

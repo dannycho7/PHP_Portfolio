@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <title>Danny's Personal Website</title>
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
-</head>
-<body onresize='menuswitch()'>
-<?php 
-$projectscolor='';
-$homecolor='';
-$photocolor='style="color:#838b91;"';
-require_once 'modules/header.php'
+<?php
+  $projectscolor='';
+  $homecolor='';
+  $photocolor='style="color:#838b91;"';
+  require_once 'modules/header.php';
 ?>
 
 <div id='webpage'>
 
-<?php 
-$messagefront = 'Photos &amp; Moments';
-$messagebehind = 'I see through. .	 .';
-require 'modules/landingpage.php';
+<?php
+  $messagefront = 'Photos &amp; Moments';
+  $messagebehind = 'I see through. .	 .';
+  require 'modules/landingpage.php';
 ?>
 <div id='content-container'>
-	<?php 
+	<?php
 	if($_GET && $_GET["folder"]){
 		$dirname = 'pics/photography/photos/'.$_GET["folder"].'/';
 		$imgs = glob($dirname."*");
@@ -46,7 +38,7 @@ require 'modules/landingpage.php';
 	$value = $foldername;
 	$value = str_replace(".JPG","",$value);
 	$value = str_replace($dirname,"",$value);
-	$folderthumb = glob($newdir."*");	
+	$folderthumb = glob($newdir."*");
 	if($folderthumb){
 	echo '<div class="album"><input type="image" src="'.$folderthumb[0].'" onclick="showPhoto(\''.$value.'\');" name="folder" value='.$value.'><p>'.$value.'</p><span>DC</span></input></div>';
 	}

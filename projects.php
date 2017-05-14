@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <title>Danny's Personal Website</title>
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
-  </head>
-<body onresize='menuswitch()'>
-<?php 
-$projectscolor='style="color:#838b91;"';
-$photocolor='';
-$homecolor='';
-require_once 'modules/header.php'
-?>
-<div id='webpage'>
 <?php
-$messagefront = 'Project Involvement';
-$messagebehind = 'What I do. . .';
-require_once 'modules/landingpage.php';
+  $projectscolor='style="color:#838b91;"';
+  $photocolor='';
+  $homecolor='';
+  require_once 'modules/header.php';
 ?>
+
+<div id='webpage'>
+  <?php
+    $messagefront = 'Project Involvement';
+    $messagebehind = 'What I do. . .';
+    require_once 'modules/landingpage.php';
+  ?>
   <div id='content-container'>
     <div class='proj-content proj-overview'>
       <img src="pics/project/work-icon.png">
