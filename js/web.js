@@ -44,7 +44,6 @@ function navigate(str){
 			window.history.pushState({}, 'Danny\'s Personal Site', str);
 		}
 	};
-	console.log(str);
 	xhttp.open("GET", str, true);
 	xhttp.send();
 }
@@ -57,6 +56,6 @@ function showInfo(element,projName){
 			content.innerHTML = xhttp.responseText;
 		}
 	}
-	xhttp.open("GET","modules/projDescr.php?name="+projName,true);
+	xhttp.open("GET","modules/projDescr.php?name=" + projName,true);
 	xhttp.send();
 }
