@@ -1,5 +1,13 @@
 <?php
-echo '<div id="navigation" class="gradient">
+echo '<!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Danny\'s Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+  </head>
+  <body onresize=\'menuswitch()\'>
+  <div id="navigation" class="gradient">
     <div id = "logo">
         <a href="index">
           <img src="pics/social/logo1.png" href="#"></img>
