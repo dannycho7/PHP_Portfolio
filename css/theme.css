@@ -14,14 +14,12 @@
   font-style: normal;
   font-weight: 400;
   src: local("Poiret One"), local("PoiretOne-Regular"), url(fonts/HrI4ZJpJ3Fh0wa5ofYMK8b3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff"); }
-.gradient {
-  height: 85px; }
-
 #container, #menubar {
   display: inline-block;
   float: right; }
 
 .gradient {
+  height: 85px;
   background-image: -o-linear-gradient(0deg, rgba(27, 30, 38, 0), rgba(27, 30, 38, 0.5) 20%, #1b1e26 40%);
   background-image: -moz-linear-gradient(0deg, rgba(27, 30, 38, 0), rgba(27, 30, 38, 0.5) 20%, #1b1e26 40%);
   background-image: -webkit-linear-gradient(90deg, rgba(27, 30, 38, 0), rgba(27, 30, 38, 0.5) 20%, #1b1e26 40%);
