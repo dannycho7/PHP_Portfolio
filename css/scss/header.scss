@@ -1,21 +1,19 @@
-.gradient{
-	height: 85px;
-}
 #container,#menubar{
 	display: inline-block; float: right;
 }
 .gradient{
+	height: 85px;
 	background-image: -o-linear-gradient(0deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
 	background-image: -moz-linear-gradient(0deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
 	background-image: -webkit-linear-gradient(90deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
 	background-image: linear-gradient(0deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
 }
 #navigation{
-	position: fixed; 
-	z-index: 3; 
+	position: fixed;
+	z-index: 3;
 	width: 100%;
-	ul{		
-		float: right; 
+	ul{
+		float: right;
 		margin: 0;
 		padding-top: 25px;
 		li{
@@ -29,17 +27,17 @@
 		}
 	}
 	.navselect:hover{
-	cursor: pointer; color:#838b91;
+		cursor: pointer; color:#838b91;
 	}
 }
 
 #menu-icon
 {
-	position:absolute; 
-	border: none; 
-	display: none; 
-	cursor: pointer; 
-	color: white; 
+	position:absolute;
+	border: none;
+	display: none;
+	cursor: pointer;
+	color: white;
 	font-size: 30px;
 }
 #logo{
@@ -55,30 +53,30 @@
 #initialpage-container{
 	background-size: cover; width: 100%; height: 95%; position: relative;
 	#initialpage{ /*for layered background*/
-		position: relative; 
-		width: 100%; 
-		height: 100%; 
+		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 	#fulltextcontainer,#fulltextcontainer-top{/*helps with vertical align*/
-		width: 100%; 
-		height: 100%; 
-		position: absolute; 
-		display: table; 
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: table;
 		z-index: 0;
-		left: 0; 
-		top: 0; 
+		left: 0;
+		top: 0;
 		margin: 0;
 	}
 	#fulltext,#fulltext-top{
-		display: table-cell; 
-		vertical-align: middle; 
-		color: white; 
-		width:80%; 
+		display: table-cell;
+		vertical-align: middle;
+		color: white;
+		width:80%;
 		text-align: center;
 	}
 	#fulltext-top{
 		h3{
-			color: rgba(255,255,255,0.5); 
+			color: rgba(255,255,255,0.5);
 			text-align: left;
 		}
 	}
@@ -86,7 +84,7 @@
 		height:80%;
 	}
 	#fulltext h3,#fulltext-top h3{
-		width: 100%; 
-		font-size:9vw; 
+		width: 100%;
+		font-size:9vw;
 	}
 }
