@@ -1,0 +1,23 @@
+{
+  "name": "PersonalSite",
+  "version": "1.0.0",
+  "description": "A personal website to display my work. Built on PHP and many other random toolsets",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannycho7/Personal_Site.git"
+  },
+  "keywords": [],
+  "author": "Danny Cho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannycho7/Personal_Site/issues"
+  },
+  "homepage": "http://dannycho.net",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}

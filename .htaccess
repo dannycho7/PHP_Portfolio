@@ -4,3 +4,11 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME}\.php -f 
 RewriteRule ^(.*)$ $1.php
+
+# set the server administrator email
+SetEnv SERVER_ADMIN dannycho7@gmail.com
+
+<FilesMatch "\.(htaccess|gitignore|eslint.json)$|package.json|README.md|Makefile">
+	Order Allow,Deny
+	Deny from all
+</FilesMatch>
