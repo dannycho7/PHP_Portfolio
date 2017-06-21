@@ -22,8 +22,7 @@ echo '<!DOCTYPE html>
       <ul class="menu-content">
         <li class="linknav"><a onclick="navigate(\'index\');" class="navselect" '.$homecolor.'>Home</a></li><!--
         --><li class="linknav"><a onclick="navigate(\'projects\');" class="navselect" '.$projectscolor.'>Projects</a></li><!--
-        --><li class="linknav"><a onclick="navigate(\'photo\');" class="navselect" '.$photocolor.'>Photography</a></li><!---->
-        <li class="linknav"><a href="pics/Resume_DannyHyunCho.pdf" class="navselect">Resume</a></li>
+        --><li class="linknav"><a onclick="navigate(\'photo\');" class="navselect" '.$photocolor.'>Photography</a></li>
       </ul>
       </div><!--menubar-->
       </div><!--container-->
