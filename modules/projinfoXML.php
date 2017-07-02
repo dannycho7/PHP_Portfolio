@@ -2,6 +2,17 @@
 	$projXML =
 		"<?xml version='1.0' encoding='UTF-8'?>
 		<projects>
+			<project displayname='express-form-post' name='express-form-post' link='https://www.npmjs.com/package/express-form-post' github_link='https://github.com/dannycho7/express-form-post' accomplishment='Node.js Module' purpose='Developer Tool' year='2017'>
+				<technologies>Node.js, AWS-S3, Dropbox, Mocha</technologies>
+				<description><![CDATA[
+					A simple and efficient solution to handling file uploading to disk, s3, or dropbox. More on this coming soon.
+					]]></description>
+			</project>
+			<project displayname='Multi-view' name='Multithreaded' accomplishment='Data Visualization' purpose='HackTech' year='2017' github_link='https://github.com/dannycho7/Multithreaded-Multiview'>
+				<technologies>JavaScript, Node.js, Express, Socket.io, HTML/CSS</technologies>
+				<description><![CDATA[ Data Visualization tool to observe runtime inefficiencies <br/> I built the server to receive data from python code interpreter, process the data, and emit messages to connected clients to display the data. <br/> Worked on with partner Eric Zhao from Caltech
+					]]></description>
+			</project>
 			<project displayname='Percept' name='Percept' github_link='https://github.com/dannycho7/Percept' accomplishment='Won Best UX Hack' purpose='LA Hacks' year='2017'>
 				<technologies>Node.js, Express, JavaScript, HTML/CSS</technologies>
 				<description><![CDATA[
